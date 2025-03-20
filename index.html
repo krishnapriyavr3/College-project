@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>College Database</title>
+</head>
+<body>
+
+<div class="container">
+    <h1>College Database Management</h1>
+
+    <!-- Tab Navigation -->
+    <div class="tab-nav">
+        <button onclick="showForm('faculty')" class="tab-btn">Faculty</button>
+        <button onclick="showForm('student')" class="tab-btn">Student</button>
+        <button onclick="showForm('course')" class="tab-btn">Course</button>
+        <button onclick="showForm('department')" class="tab-btn">Department</button>
+        <button onclick="showForm('staff')" class="tab-btn">Staff</button> <!-- New Tab for Staff -->
+    </div>
+
+    <!-- Faculty Form -->
+    <div class="form-container" id="facultyForm">
+        <h2>Faculty</h2>
+        <form id="facultyFormInner">
+            <input type="text" id="fid" placeholder="Faculty ID" required />
+            <input type="text" id="name" placeholder="Name" required />
+            <input type="email" id="email" placeholder="Email" required />
+            <input type="number" id="salary" placeholder="Salary" required />
+            <select id="gender" required>
+                <option value="" disabled selected>Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            <input type="date" id="dob" required />
+            <input type="text" id="address" placeholder="Address" required />
+            <input type="tel" id="contact" placeholder="Contact" required />
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        <table id="facultyTable" class="data-table">
+            <thead>
+                <tr>
+                    <th>ID</th><th>Name</th><th>Email</th><th>Salary</th><th>Gender</th><th>DOB</th><th>Address</th><th>Contact</th><th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <!-- Student Form -->
+    <div class="form-container" id="studentForm">
+        <h2>Student</h2>
+        <form id="studentFormInner">
+            <input type="text" id="studentId" placeholder="Student ID" required />
+            <input type="text" id="studentName" placeholder="Name" required />
+            <input type="email" id="studentEmail" placeholder="Email" required />
+            <input type="number" id="studentAge" placeholder="Age" required />
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        <table id="studentTable" class="data-table">
+            <thead>
+                <tr>
+                    <th>ID</th><th>Name</th><th>Email</th><th>Age</th><th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <!-- Course Form -->
+    <div class="form-container" id="courseForm">
+        <h2>Course</h2>
+        <form id="courseFormInner">
+            <input type="text" id="courseId" placeholder="Course ID" required />
+            <input type="text" id="courseName" placeholder="Course Name" required />
+            <input type="text" id="courseCode" placeholder="Course Code" required />
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        <table id="courseTable" class="data-table">
+            <thead>
+                <tr>
+                    <th>ID</th><th>Name</th><th>Code</th><th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <!-- Department Form -->
+    <div class="form-container" id="departmentForm">
+        <h2>Department</h2>
+        <form id="departmentFormInner">
+            <input type="text" id="deptId" placeholder="Department ID" required />
+            <input type="text" id="deptName" placeholder="Department Name" required />
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        <table id="departmentTable" class="data-table">
+            <thead>
+                <tr>
+                    <th>ID</th><th>Name</th><th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <!-- Staff Form -->
+    <div class="form-container" id="staffForm">
+        <h2>Staff</h2>
+        <form id="staffFormInner">
+            <input type="text" id="staffId" placeholder="Staff ID" required />
+            <input type="text" id="staffName" placeholder="Name" required />
+            <input type="text" id="staffRole" placeholder="Role" required />
+            <input type="tel" id="staffContact" placeholder="Contact" required />
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        <table id="staffTable" class="data-table">
+            <thead>
+                <tr>
+                    <th>ID</th><th>Name</th><th>Role</th><th>Contact</th><th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

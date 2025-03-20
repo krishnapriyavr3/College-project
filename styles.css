@@ -1,0 +1,134 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #000204, #f3f6f8);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    width: 95%;
+    max-width: 1200px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #00cec9;
+  }
+  
+  /* Tab Navigation */
+  .tab-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .tab-btn {
+    background-color: #00cec9;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    margin: 0 8px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0, 206, 201, 0.5);
+    transition: all 0.3s;
+  }
+  
+  .tab-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 20px rgba(0, 206, 201, 0.7);
+  }
+  
+  .form-container {
+    display: none;
+    margin-top: 20px;
+  }
+  
+  h2 {
+    color: #00cec9;
+    margin-bottom: 10px;
+  }
+  
+  form input, form select, .submit-btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background-color: #2d3436;
+    color: #fff;
+    box-shadow: inset 3px 3px 8px rgba(0, 0, 0, 0.6);
+    outline: none;
+  }
+  
+  form input:focus, form select:focus {
+    box-shadow: 0 0 8px #00cec9;
+  }
+  
+  .submit-btn {
+    background-color: #00cec9;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0984e3;
+    transform: translateY(-3px);
+  }
+  
+  /* Table Styling */
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .data-table th, .data-table td {
+    padding: 12px;
+    border-bottom: 1px solid #00cec9;
+    text-align: center;
+  }
+  
+  .data-table th {
+    background-color: #00cec9;
+    color: #fff;
+  }
+  
+  .data-table tr:nth-child(even) {
+    background-color: rgba(0, 206, 201, 0.2);
+  }
+  
+  /* Active Form */
+  .active-form {
+    display: block;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .tab-btn {
+      padding: 10px 16px;
+      font-size: 0.9rem;
+    }
+  
+    form input, form select, .submit-btn {
+      font-size: 0.9rem;
+    }
+  }
