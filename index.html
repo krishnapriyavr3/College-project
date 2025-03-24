@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -57,12 +58,34 @@
             <input type="text" id="studentName" placeholder="Name" required />
             <input type="email" id="studentEmail" placeholder="Email" required />
             <input type="number" id="studentAge" placeholder="Age" required />
+            <input type="number" id="studenyContact" placeholder="Contact" required />
+            <input type="number"  id="studentAdmission" placeholder="AdmissionNumber" required />
+            <select id="gender" required>
+                <option value="" disabled selected>Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            <input type="date" id="dob" required />
+            <input type="text" id="address" placeholder="Address" required />
+            <select id="semester" required>
+                <option value="" disabled selected>Semester</option>
+                <option value="1" >1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+            </select>
+            <input type="number" id="Rollno" placeholder="Rollno" required/>
             <button type="submit" class="submit-btn">Submit</button>
         </form>
         <table id="studentTable" class="data-table">
             <thead>
                 <tr>
-                    <th>ID</th><th>Name</th><th>Email</th><th>Age</th><th>Actions</th>
+                    <th>ID</th><th>Name</th><th>Email</th><th>Age</th> <th>contact</th> <th>AdmissionNumber</th> <th>Gender</th><th>Dob</th> <th>address</th> <th>sem</th> <th>Rollno</th><th>Actions</th>
                 </tr>
             </thead>
             <tbody></tbody>
@@ -113,13 +136,23 @@
             <input type="text" id="staffId" placeholder="Staff ID" required />
             <input type="text" id="staffName" placeholder="Name" required />
             <input type="text" id="staffRole" placeholder="Role" required />
-            <input type="tel" id="staffContact" placeholder="Contact" required />
+            <select id="gender" required>
+                <option value="" disabled selected>Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            <input type="email" id="email" placeholder="Email" required />
+            <input type="number" id="salary" placeholder="Salary" required />
+            <input type="date" id="dob" required />
+            <input type="text" id="address" placeholder="Address" required />
+            <input type="tel" id="contact" placeholder="Contact" required />
             <button type="submit" class="submit-btn">Submit</button>
         </form>
         <table id="staffTable" class="data-table">
             <thead>
                 <tr>
-                    <th>ID</th><th>Name</th><th>Role</th><th>Contact</th><th>Actions</th>
+                    <th>ID</th><th>Name</th><th>Role</th><th>Contact</th> <th>Gender</th> <th>Email</th> <th>Salary</th> <th>DOB</th> <th>Address</th> <th>Contact</th><th>Actions</th>
                 </tr>
             </thead>
             <tbody></tbody>
